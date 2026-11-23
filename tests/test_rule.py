@@ -66,3 +66,16 @@ def test_night_flow_takes_tank_filling_off():
 def test_in_year_keeps_only_that_year():
     days = [pd.Timestamp("2018-12-31"), pd.Timestamp("2019-01-01")]
     assert list(in_year(days, 2019)) == [pd.Timestamp("2019-01-01")]
+
+
+def test_seven_day_window_ignores_a_weekly_rhythm_and_sees_a_step():
+    days = pd.date_range("2018-01-01", periods=56, freq="D")
+    weekly = np.where(days.dayofweek >= 5, 30.0, 0.0)
+    step = np.where(np.arange(56) < 28, 20.0, 0.0)
+    night = pd.Series(100.0 + weekly + step, index=days)
+    drop = drops(night, window=7)
+    assert abs(drop.loc["2018-01-28"] - 20.0) < 1e-9
+    assert abs(drop.loc["2018-01-14"]) < 1e-9
+    assert list(flags(drop, 10.0, window=7)) == [pd.Timestamp("2018-01-28")]
+    three_day = flags(drops(night), 10.0)
+    assert len(three_day) > 1

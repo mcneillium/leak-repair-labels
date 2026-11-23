@@ -7,18 +7,18 @@ WINDOW_DAYS = 3
 MATCH_DAYS = 2
 
 
-def drops(night):
-    """Mean of days d-2..d minus mean of days d+1..d+3, for every day d."""
-    before = night.rolling(WINDOW_DAYS).mean()
-    after = before.shift(-WINDOW_DAYS)
+def drops(night, window=WINDOW_DAYS):
+    """Mean of the window of days ending on d, minus the mean of the window starting on d+1."""
+    before = night.rolling(window).mean()
+    after = before.shift(-window)
     result = before - after
     result.name = "drop"
     return result
 
 
-def flags(drop, threshold):
-    """Days whose drop reaches the threshold and is the largest within 3 days either side."""
-    width = 2 * WINDOW_DAYS + 1
+def flags(drop, threshold, window=WINDOW_DAYS):
+    """Days whose drop reaches the threshold and is the largest within one window either side."""
+    width = 2 * window + 1
     local_max = drop.rolling(width, center=True, min_periods=1).max()
     chosen = (drop >= threshold) & (drop == local_max)
     return drop.index[chosen.fillna(False).to_numpy()]
@@ -72,12 +72,12 @@ def in_year(days, year):
     return days[days.year == year]
 
 
-def choose_threshold(drop, repair_days, year, grid):
+def choose_threshold(drop, repair_days, year, grid, window=WINDOW_DAYS):
     """Threshold with the highest F1 in one year. A tie goes to the larger threshold."""
     best_threshold = None
     best_f1 = -1.0
     for threshold in grid:
-        flag_days = in_year(flags(drop, threshold), year)
+        flag_days = in_year(flags(drop, threshold, window), year)
         f1 = score(flag_days, repair_days)["f1"]
         if f1 >= best_f1:
             best_f1 = f1

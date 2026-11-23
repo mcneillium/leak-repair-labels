@@ -51,3 +51,18 @@ Primary measure: how many of the 7 real repairs in 2019 the rule finds. Secondar
 - 7 test repairs is a small number. One repair more or less moves the result by 14 points.
 - One town, one rule, one way of choosing the threshold.
 - The rule stands in for the idea of inferring a repair from a flow drop. It is not any water company's rule.
+
+## Amendment 1 (recorded at 01:56 UTC on 23 November 2026, after the 2018 run and before any 2019 file was read)
+
+What 2018 showed: the chosen threshold for the 3-day rule is 34.5 cubic metres an hour, and the rule found 7 of the 10 repairs with no false flag. Night flow in this town is 20 to 30 cubic metres an hour higher on two nights of every week (weekday means 88.9 to 94.5 on five days, 111.1 and 120.8 on the other two). The 3-day rule reacts to that rhythm: at low thresholds it raises about 52 flags in the year.
+
+Paul's decision: the 3-day rule stays the primary rule and its predictions stand. A second rule is added and run beside it on 2019.
+
+Second rule, the 7-day rule: for each day d, the drop is the mean night flow of days d-6 to d minus the mean of days d+1 to d+7. Day d is flagged when its drop is at least the threshold and is the largest among days d-7 to d+7. The threshold is chosen on 2018 by the same procedure. Scoring is unchanged.
+
+Paul's predictions for the 7-day rule on 2019 (recorded before the run):
+
+- It finds 4 or 5 of the 7 real repairs.
+- More than 80% of its flags are real repairs.
+
+Detail fixed here: drops for the first days of 2019 use the last nights of 2018, so the two years' flow files are joined for the test run. A flag belongs to the year of its day d.
