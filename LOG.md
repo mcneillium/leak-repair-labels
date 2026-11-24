@@ -105,3 +105,11 @@ How 2019 comes out elsewhere in those ranges has not been run.
 - Paul proposed the question (option A, in his wording), the three-night rule as primary with the seven-night rule as a comparison, choices B1 to B8, a secondary measure, and two draft predictions (sent at 02:49). He asked that the predictions stay drafts until he confirms them, and said he will date and commit the final protocol himself.
 - The assistant put these into `docs/protocol_02_draft.md` and added seven details marked "to confirm". The main one is a new choice B9: the public `L-TOWN.inp` repeats a one-week demand pattern, so simulated years need demand that varies or the rule may miss almost nothing. The draft B2 ranges were counted by the assistant from the 14 leaks that start in 2018 in `dataset_configuration.yaml`, with the 2019 rows skipped in code. No simulation was run.
 - Paul's findings paragraph replaced the placeholder in `README.md`.
+
+## 24 November 2026, 03:20: rerun on Paul's PC, and the NumPy version
+
+- The original run's NumPy version was not recorded. Paul listed the packages in all eleven of his conda environments; none had pandas 2.2.3, PyYAML 6.0.3 and pytest 9.2.0 together, so the original environment no longer exists and its NumPy version cannot be recovered.
+- The eight data files were copied to Paul's PC from the assistant's copy. All eight MD5 checksums equal those published on the Zenodo record.
+- Paul made a new conda environment (`leak`, Python 3.12), installed pandas 2.2.3, PyYAML 6.0.3 and pytest 9.2.0 as in `RUN.md`, and ran the tests and the study. pip chose NumPy 2.5.5.
+- Result, checked by the assistant from the files Paul's run wrote: 6 passed, 4 warnings; `stages.txt` and `study.json` identical to `results/` byte for byte once Windows line endings are removed.
+- `RUN.md` now pins NumPy 2.5.5 and says it is the rerun's version, not the original's.
