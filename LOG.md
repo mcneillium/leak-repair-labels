@@ -99,3 +99,9 @@ How 2019 comes out elsewhere in those ranges has not been run.
 
 - The assistant wrote `docs/protocol_02_draft.md` at Paul's request ("set up next stage of research"). It offers three sample questions, lists eight open choices (B1 to B8) and leaves the question, the choices and the predictions for Paul. Nothing in it is fixed. The assistant also added a short "Next stage" section to `README.md` pointing to the draft.
 - The assistant ran two feasibility scripts, `sim/feasibility.py` and `sim/timing7.py`, with `wntr` 1.5.0. They load `L-TOWN.inp`, time EPANET and WNTR runs and add test leaks at arbitrary junctions. No night flow was computed, no rule was run and no real 2018 or 2019 record was opened. Timings are in the draft.
+
+## 24 November 2026, night: protocol 2 draft, second version
+
+- Paul proposed the question (option A, in his wording), the three-night rule as primary with the seven-night rule as a comparison, choices B1 to B8, a secondary measure, and two draft predictions (sent at 02:49). He asked that the predictions stay drafts until he confirms them, and said he will date and commit the final protocol himself.
+- The assistant put these into `docs/protocol_02_draft.md` and added seven details marked "to confirm". The main one is a new choice B9: the public `L-TOWN.inp` repeats a one-week demand pattern, so simulated years need demand that varies or the rule may miss almost nothing. The draft B2 ranges were counted by the assistant from the 14 leaks that start in 2018 in `dataset_configuration.yaml`, with the 2019 rows skipped in code. No simulation was run.
+- Paul's findings paragraph replaced the placeholder in `README.md`.
