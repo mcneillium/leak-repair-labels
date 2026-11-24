@@ -46,6 +46,10 @@ python leak_rule.py "path/to/data" --output results
 - One town, two rules, one way of choosing the threshold.
 - The rules stand in for the idea of inferring a repair from a flow drop. They are not any water company's rule, and no water company's data is used.
 
+## Next stage
+
+`docs/protocol_02_draft.md` is a draft of a second protocol: simulate more years of L-Town with leaks at known times, train a model on the rule's labels, and measure how many of the rule's misses the model repeats. The question, the design choices and the predictions have not been chosen yet, and nothing in it has been run.
+
 ## How this was produced
 
 I chose the rule, recorded my predictions before the runs and chose amendment 1 from options suggested by an AI assistant. An AI assistant wrote and ran the first implementation on 23 November. Codex wrote a second implementation from a brief containing the rules and check values. Both implementations produced the same thresholds, flag dates and repair results. I kept the Codex version because it fixes both thresholds using the 2018 data before opening any file containing 2019 records. I also re-ran the study on my own machine and the numbers matched. LOG.md records the detailed choices and the date I reviewed each one.

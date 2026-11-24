@@ -94,3 +94,8 @@ Tied ranges at the best 2018 F1 (from `results/study.json`):
 - 7 nights: F1 0.8889 for every threshold from 4.0 to 10.0 m3/h (13 values). Chosen: 10.0.
 
 How 2019 comes out elsewhere in those ranges has not been run.
+
+## 24 November 2026, evening: draft of the next stage (assistant work)
+
+- The assistant wrote `docs/protocol_02_draft.md` at Paul's request ("set up next stage of research"). It offers three sample questions, lists eight open choices (B1 to B8) and leaves the question, the choices and the predictions for Paul. Nothing in it is fixed. The assistant also added a short "Next stage" section to `README.md` pointing to the draft.
+- The assistant ran two feasibility scripts, `sim/feasibility.py` and `sim/timing7.py`, with `wntr` 1.5.0. They load `L-TOWN.inp`, time EPANET and WNTR runs and add test leaks at arbitrary junctions. No night flow was computed, no rule was run and no real 2018 or 2019 record was opened. Timings are in the draft.
