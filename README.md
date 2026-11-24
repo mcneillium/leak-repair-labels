@@ -50,7 +50,7 @@ python leak_rule.py "path/to/data" --output results
 
 ## Next stage
 
-`docs/protocol_02_draft.md` is a draft of a second protocol: simulate more years of L-Town with leaks at known times, train a model on the rule's labels, and measure how many of the rule's misses the model repeats. The question, the design choices and the predictions have not been chosen yet, and nothing in it has been run.
+[Protocol 2](docs/protocol_02.md) fixes the design and predictions for 20 simulated L-Town years. The primary outcome is the fraction of true repairs missed by the three-night rule that its model also misses. Only feasibility timing has been run.
 
 ## How this was produced
 

@@ -123,3 +123,7 @@ How 2019 comes out elsewhere in those ranges has not been run.
 
 - Paul decided B9 at 03:33: use `L-TOWN_Real.inp`; give each simulated year a distinct, seed-selected whole-week offset; before any study year, measure the absolute change in leak-free night flow across the join, smooth it if it exceeds 5 m3/h and recheck; report the simulated-against-published 2018 night-flow difference with no pass or fail cutoff. The assistant recorded these in `docs/protocol_02_draft.md` (third version). His predictions and the remaining choices are still open for his review.
 - At his request the assistant ran `sim/timing_real.py`: one week of `L-TOWN_Real.inp` in WNTR's pressure-driven simulator with no leak (41.6 s) and with one test leak (42.1 s); loading took 5.5 s. Neither run was scored and no night flow was computed.
+
+## 24 November 2026 at 03:40 UK time. Protocol 2 finalised before scoring
+
+At Paul's request, Codex finalised and committed the protocol from draft 41a32f0. The final document records the 2018-based leak ranges, calendar and growing-leak rules, model features and development selection, frozen week assignments and a 24-hour demand crossfade with a 5 m³/h recheck. Codex retained Paul's original two prediction ranges after reviewing B9. The seed assignment was reproduced without running hydraulics. No study years were generated or scored during finalisation.

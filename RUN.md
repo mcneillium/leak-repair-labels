@@ -11,3 +11,13 @@ The supplied results/stages.txt contains the console output. The program writes 
 ## Versions
 
 The original run did not record its NumPy version, and the environment it used no longer exists. NumPy 2.5.5 is the version from my rerun on 24 November 2026, in a new conda environment with Python 3.12 on Windows and the other three versions above. That rerun passed all 6 tests and wrote `stages.txt` and `study.json` identical to the saved files, apart from Windows line endings. With this NumPy the tests print four `DeprecationWarning`s about timedelta units (lines 17, 36, 37 and 41 of `leak_rule.py`); they do not change any result.
+
+## Protocol 2 seed assignments
+
+The master demand seed is 20261124. Year seeds control the leaks. Offsets below correspond to consecutive seeds in ascending order within each row. The model seed is 42.
+
+| Split | Year seeds | Demand offsets in whole weeks |
+| --- | --- | --- |
+| Training | 1001–1010 | 19, 7, 47, 20, 1, 23, 6, 39, 30, 13 |
+| Development | 1011–1014 | 37, 33, 46, 12 |
+| Final test | 1015–1020 | 34, 41, 14, 5, 26, 16 |
