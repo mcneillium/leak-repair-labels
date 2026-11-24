@@ -23,21 +23,21 @@ L-Town, the benchmark of the Battle of the Leakage Detection and Isolation Metho
 | 3-day step drop (primary) | 34.5 m3/h | 7 found, 7 flags | 3 found, 3 flags | 2 or 3 found; 50 to 80% of flags real |
 | 7-day step drop (added by amendment 1) | 10.0 m3/h | 8 found, 8 flags | 6 found, 6 flags | 4 or 5 found; over 80% of flags real |
 
-Every flag in both years was a real repair, so the rules' errors here are all misses. Tables for each repair are in `results/`.
+Every flag in both years matched a recorded repair, so the rules' errors here are all misses. `results/study.json` holds every threshold score, both repair tables and the flag paired with each repair; `results/stages.txt` is the printed output of the run.
 
 <!-- TODO (Paul): put the findings in your own words. -->
 
 ## How to run
 
+Put the files listed in `CITATION.md` in one folder, then:
+
 ```
-pip install pandas pytest
-python -m lrl.download data
-python -m pytest tests
-python scripts/set_threshold_2018.py data
-python scripts/test_2019.py data
+python -m pip install pandas==2.2.3 PyYAML==6.0.3 pytest==9.2.0
+python -m pytest -q test_leak_rule.py
+python leak_rule.py "path/to/data" --output results
 ```
 
-Run the scripts from the repository root with `PYTHONPATH=.` set. `set_threshold_2018.py` reads no 2019 file.
+`RUN.md` has the same steps. Both thresholds are fixed from the 2018 files before any file containing 2019 records is opened.
 
 ## Limits
 
@@ -48,4 +48,4 @@ Run the scripts from the repository root with `PYTHONPATH=.` set. `set_threshold
 
 ## How this was produced
 
-The question was chosen by Paul McNeill from wording offered by an AI assistant. He chose the rule, recorded the predictions before each run and decided amendment 1. The assistant wrote the code and the protocol text and made both runs on its own machine. `LOG.md` records which choices were the assistant's. Paul has not yet re-run the study on his own machine.
+I chose the rule, recorded my predictions before the runs and chose amendment 1 from options suggested by an AI assistant. An AI assistant wrote and ran the first implementation on 23 November. Codex wrote a second implementation from a brief containing the rules and check values. Both implementations produced the same thresholds, flag dates and repair results. I kept the Codex version because it fixes both thresholds using the 2018 data before opening any file containing 2019 records. I also re-ran the study on my own machine and the numbers matched. LOG.md records the detailed choices and the date I reviewed each one.
