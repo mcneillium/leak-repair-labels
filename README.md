@@ -2,6 +2,8 @@
 
 First look, 23 November 2026. One town, two rules, seven test repairs. Not peer reviewed.
 
+Write-up: https://paulmartinmcneill.com/research/#leak-repair-labels
+
 ## Question
 
 When leak repairs are inferred from a drop in night flow, how many of the real repairs does the rule find, and how many of the repairs it flags are real?
