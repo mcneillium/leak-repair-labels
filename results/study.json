@@ -1,0 +1,1663 @@
+{
+  "thresholds": {
+    "3": 34.5,
+    "7": 10.0
+  },
+  "grid": {
+    "3": [
+      {
+        "threshold": 1.0,
+        "flags": 52,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.19230769230769232,
+        "recall": 1.0,
+        "f1": 0.3225806451612903
+      },
+      {
+        "threshold": 1.5,
+        "flags": 52,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.19230769230769232,
+        "recall": 1.0,
+        "f1": 0.3225806451612903
+      },
+      {
+        "threshold": 2.0,
+        "flags": 52,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.19230769230769232,
+        "recall": 1.0,
+        "f1": 0.3225806451612903
+      },
+      {
+        "threshold": 2.5,
+        "flags": 52,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.19230769230769232,
+        "recall": 1.0,
+        "f1": 0.3225806451612903
+      },
+      {
+        "threshold": 3.0,
+        "flags": 52,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.19230769230769232,
+        "recall": 1.0,
+        "f1": 0.3225806451612903
+      },
+      {
+        "threshold": 3.5,
+        "flags": 52,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.19230769230769232,
+        "recall": 1.0,
+        "f1": 0.3225806451612903
+      },
+      {
+        "threshold": 4.0,
+        "flags": 51,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.19607843137254902,
+        "recall": 1.0,
+        "f1": 0.32786885245901637
+      },
+      {
+        "threshold": 4.5,
+        "flags": 50,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.3333333333333333
+      },
+      {
+        "threshold": 5.0,
+        "flags": 50,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.3333333333333333
+      },
+      {
+        "threshold": 5.5,
+        "flags": 47,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.2127659574468085,
+        "recall": 1.0,
+        "f1": 0.3508771929824561
+      },
+      {
+        "threshold": 6.0,
+        "flags": 47,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.2127659574468085,
+        "recall": 1.0,
+        "f1": 0.3508771929824561
+      },
+      {
+        "threshold": 6.5,
+        "flags": 47,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.2127659574468085,
+        "recall": 1.0,
+        "f1": 0.3508771929824561
+      },
+      {
+        "threshold": 7.0,
+        "flags": 47,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.2127659574468085,
+        "recall": 1.0,
+        "f1": 0.3508771929824561
+      },
+      {
+        "threshold": 7.5,
+        "flags": 47,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.2127659574468085,
+        "recall": 1.0,
+        "f1": 0.3508771929824561
+      },
+      {
+        "threshold": 8.0,
+        "flags": 47,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.2127659574468085,
+        "recall": 1.0,
+        "f1": 0.3508771929824561
+      },
+      {
+        "threshold": 8.5,
+        "flags": 47,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.2127659574468085,
+        "recall": 1.0,
+        "f1": 0.3508771929824561
+      },
+      {
+        "threshold": 9.0,
+        "flags": 47,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.2127659574468085,
+        "recall": 1.0,
+        "f1": 0.3508771929824561
+      },
+      {
+        "threshold": 9.5,
+        "flags": 46,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.21739130434782608,
+        "recall": 1.0,
+        "f1": 0.35714285714285715
+      },
+      {
+        "threshold": 10.0,
+        "flags": 46,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.21739130434782608,
+        "recall": 1.0,
+        "f1": 0.35714285714285715
+      },
+      {
+        "threshold": 10.5,
+        "flags": 46,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.21739130434782608,
+        "recall": 1.0,
+        "f1": 0.35714285714285715
+      },
+      {
+        "threshold": 11.0,
+        "flags": 46,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.21739130434782608,
+        "recall": 1.0,
+        "f1": 0.35714285714285715
+      },
+      {
+        "threshold": 11.5,
+        "flags": 44,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.22727272727272727,
+        "recall": 1.0,
+        "f1": 0.37037037037037035
+      },
+      {
+        "threshold": 12.0,
+        "flags": 43,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.23255813953488372,
+        "recall": 1.0,
+        "f1": 0.37735849056603776
+      },
+      {
+        "threshold": 12.5,
+        "flags": 41,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.24390243902439024,
+        "recall": 1.0,
+        "f1": 0.39215686274509803
+      },
+      {
+        "threshold": 13.0,
+        "flags": 41,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.24390243902439024,
+        "recall": 1.0,
+        "f1": 0.39215686274509803
+      },
+      {
+        "threshold": 13.5,
+        "flags": 41,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.24390243902439024,
+        "recall": 1.0,
+        "f1": 0.39215686274509803
+      },
+      {
+        "threshold": 14.0,
+        "flags": 41,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.24390243902439024,
+        "recall": 1.0,
+        "f1": 0.39215686274509803
+      },
+      {
+        "threshold": 14.5,
+        "flags": 39,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.2564102564102564,
+        "recall": 1.0,
+        "f1": 0.40816326530612246
+      },
+      {
+        "threshold": 15.0,
+        "flags": 38,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.2631578947368421,
+        "recall": 1.0,
+        "f1": 0.4166666666666667
+      },
+      {
+        "threshold": 15.5,
+        "flags": 37,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.2702702702702703,
+        "recall": 1.0,
+        "f1": 0.425531914893617
+      },
+      {
+        "threshold": 16.0,
+        "flags": 37,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.2702702702702703,
+        "recall": 1.0,
+        "f1": 0.425531914893617
+      },
+      {
+        "threshold": 16.5,
+        "flags": 36,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.2777777777777778,
+        "recall": 1.0,
+        "f1": 0.43478260869565216
+      },
+      {
+        "threshold": 17.0,
+        "flags": 35,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.2857142857142857,
+        "recall": 1.0,
+        "f1": 0.4444444444444444
+      },
+      {
+        "threshold": 17.5,
+        "flags": 33,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.30303030303030304,
+        "recall": 1.0,
+        "f1": 0.46511627906976744
+      },
+      {
+        "threshold": 18.0,
+        "flags": 31,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.3225806451612903,
+        "recall": 1.0,
+        "f1": 0.4878048780487805
+      },
+      {
+        "threshold": 18.5,
+        "flags": 27,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.37037037037037035,
+        "recall": 1.0,
+        "f1": 0.5405405405405406
+      },
+      {
+        "threshold": 19.0,
+        "flags": 25,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714285714285714
+      },
+      {
+        "threshold": 19.5,
+        "flags": 23,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.43478260869565216,
+        "recall": 1.0,
+        "f1": 0.6060606060606061
+      },
+      {
+        "threshold": 20.0,
+        "flags": 23,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.43478260869565216,
+        "recall": 1.0,
+        "f1": 0.6060606060606061
+      },
+      {
+        "threshold": 20.5,
+        "flags": 21,
+        "repairs": 10,
+        "found": 10,
+        "precision": 0.47619047619047616,
+        "recall": 1.0,
+        "f1": 0.6451612903225806
+      },
+      {
+        "threshold": 21.0,
+        "flags": 20,
+        "repairs": 10,
+        "found": 9,
+        "precision": 0.45,
+        "recall": 0.9,
+        "f1": 0.6
+      },
+      {
+        "threshold": 21.5,
+        "flags": 18,
+        "repairs": 10,
+        "found": 8,
+        "precision": 0.4444444444444444,
+        "recall": 0.8,
+        "f1": 0.5714285714285714
+      },
+      {
+        "threshold": 22.0,
+        "flags": 16,
+        "repairs": 10,
+        "found": 8,
+        "precision": 0.5,
+        "recall": 0.8,
+        "f1": 0.6153846153846154
+      },
+      {
+        "threshold": 22.5,
+        "flags": 15,
+        "repairs": 10,
+        "found": 8,
+        "precision": 0.5333333333333333,
+        "recall": 0.8,
+        "f1": 0.64
+      },
+      {
+        "threshold": 23.0,
+        "flags": 15,
+        "repairs": 10,
+        "found": 8,
+        "precision": 0.5333333333333333,
+        "recall": 0.8,
+        "f1": 0.64
+      },
+      {
+        "threshold": 23.5,
+        "flags": 14,
+        "repairs": 10,
+        "found": 8,
+        "precision": 0.5714285714285714,
+        "recall": 0.8,
+        "f1": 0.6666666666666666
+      },
+      {
+        "threshold": 24.0,
+        "flags": 13,
+        "repairs": 10,
+        "found": 8,
+        "precision": 0.6153846153846154,
+        "recall": 0.8,
+        "f1": 0.6956521739130435
+      },
+      {
+        "threshold": 24.5,
+        "flags": 11,
+        "repairs": 10,
+        "found": 7,
+        "precision": 0.6363636363636364,
+        "recall": 0.7,
+        "f1": 0.6666666666666666
+      },
+      {
+        "threshold": 25.0,
+        "flags": 10,
+        "repairs": 10,
+        "found": 7,
+        "precision": 0.7,
+        "recall": 0.7,
+        "f1": 0.7
+      },
+      {
+        "threshold": 25.5,
+        "flags": 9,
+        "repairs": 10,
+        "found": 7,
+        "precision": 0.7777777777777778,
+        "recall": 0.7,
+        "f1": 0.7368421052631579
+      },
+      {
+        "threshold": 26.0,
+        "flags": 9,
+        "repairs": 10,
+        "found": 7,
+        "precision": 0.7777777777777778,
+        "recall": 0.7,
+        "f1": 0.7368421052631579
+      },
+      {
+        "threshold": 26.5,
+        "flags": 9,
+        "repairs": 10,
+        "found": 7,
+        "precision": 0.7777777777777778,
+        "recall": 0.7,
+        "f1": 0.7368421052631579
+      },
+      {
+        "threshold": 27.0,
+        "flags": 9,
+        "repairs": 10,
+        "found": 7,
+        "precision": 0.7777777777777778,
+        "recall": 0.7,
+        "f1": 0.7368421052631579
+      },
+      {
+        "threshold": 27.5,
+        "flags": 8,
+        "repairs": 10,
+        "found": 7,
+        "precision": 0.875,
+        "recall": 0.7,
+        "f1": 0.7777777777777778
+      },
+      {
+        "threshold": 28.0,
+        "flags": 8,
+        "repairs": 10,
+        "found": 7,
+        "precision": 0.875,
+        "recall": 0.7,
+        "f1": 0.7777777777777778
+      },
+      {
+        "threshold": 28.5,
+        "flags": 8,
+        "repairs": 10,
+        "found": 7,
+        "precision": 0.875,
+        "recall": 0.7,
+        "f1": 0.7777777777777778
+      },
+      {
+        "threshold": 29.0,
+        "flags": 8,
+        "repairs": 10,
+        "found": 7,
+        "precision": 0.875,
+        "recall": 0.7,
+        "f1": 0.7777777777777778
+      },
+      {
+        "threshold": 29.5,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 30.0,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 30.5,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 31.0,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 31.5,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 32.0,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 32.5,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 33.0,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 33.5,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 34.0,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 34.5,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 35.0,
+        "flags": 6,
+        "repairs": 10,
+        "found": 6,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      {
+        "threshold": 35.5,
+        "flags": 6,
+        "repairs": 10,
+        "found": 6,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      {
+        "threshold": 36.0,
+        "flags": 6,
+        "repairs": 10,
+        "found": 6,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      {
+        "threshold": 36.5,
+        "flags": 6,
+        "repairs": 10,
+        "found": 6,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      {
+        "threshold": 37.0,
+        "flags": 6,
+        "repairs": 10,
+        "found": 6,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      {
+        "threshold": 37.5,
+        "flags": 6,
+        "repairs": 10,
+        "found": 6,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      {
+        "threshold": 38.0,
+        "flags": 5,
+        "repairs": 10,
+        "found": 5,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      {
+        "threshold": 38.5,
+        "flags": 5,
+        "repairs": 10,
+        "found": 5,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      {
+        "threshold": 39.0,
+        "flags": 5,
+        "repairs": 10,
+        "found": 5,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      {
+        "threshold": 39.5,
+        "flags": 5,
+        "repairs": 10,
+        "found": 5,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      {
+        "threshold": 40.0,
+        "flags": 3,
+        "repairs": 10,
+        "found": 3,
+        "precision": 1.0,
+        "recall": 0.3,
+        "f1": 0.46153846153846156
+      }
+    ],
+    "7": [
+      {
+        "threshold": 1.0,
+        "flags": 12,
+        "repairs": 10,
+        "found": 8,
+        "precision": 0.6666666666666666,
+        "recall": 0.8,
+        "f1": 0.7272727272727273
+      },
+      {
+        "threshold": 1.5,
+        "flags": 11,
+        "repairs": 10,
+        "found": 8,
+        "precision": 0.7272727272727273,
+        "recall": 0.8,
+        "f1": 0.7619047619047619
+      },
+      {
+        "threshold": 2.0,
+        "flags": 11,
+        "repairs": 10,
+        "found": 8,
+        "precision": 0.7272727272727273,
+        "recall": 0.8,
+        "f1": 0.7619047619047619
+      },
+      {
+        "threshold": 2.5,
+        "flags": 10,
+        "repairs": 10,
+        "found": 8,
+        "precision": 0.8,
+        "recall": 0.8,
+        "f1": 0.8
+      },
+      {
+        "threshold": 3.0,
+        "flags": 9,
+        "repairs": 10,
+        "found": 8,
+        "precision": 0.8888888888888888,
+        "recall": 0.8,
+        "f1": 0.8421052631578947
+      },
+      {
+        "threshold": 3.5,
+        "flags": 9,
+        "repairs": 10,
+        "found": 8,
+        "precision": 0.8888888888888888,
+        "recall": 0.8,
+        "f1": 0.8421052631578947
+      },
+      {
+        "threshold": 4.0,
+        "flags": 8,
+        "repairs": 10,
+        "found": 8,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      {
+        "threshold": 4.5,
+        "flags": 8,
+        "repairs": 10,
+        "found": 8,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      {
+        "threshold": 5.0,
+        "flags": 8,
+        "repairs": 10,
+        "found": 8,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      {
+        "threshold": 5.5,
+        "flags": 8,
+        "repairs": 10,
+        "found": 8,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      {
+        "threshold": 6.0,
+        "flags": 8,
+        "repairs": 10,
+        "found": 8,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      {
+        "threshold": 6.5,
+        "flags": 8,
+        "repairs": 10,
+        "found": 8,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      {
+        "threshold": 7.0,
+        "flags": 8,
+        "repairs": 10,
+        "found": 8,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      {
+        "threshold": 7.5,
+        "flags": 8,
+        "repairs": 10,
+        "found": 8,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      {
+        "threshold": 8.0,
+        "flags": 8,
+        "repairs": 10,
+        "found": 8,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      {
+        "threshold": 8.5,
+        "flags": 8,
+        "repairs": 10,
+        "found": 8,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      {
+        "threshold": 9.0,
+        "flags": 8,
+        "repairs": 10,
+        "found": 8,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      {
+        "threshold": 9.5,
+        "flags": 8,
+        "repairs": 10,
+        "found": 8,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      {
+        "threshold": 10.0,
+        "flags": 8,
+        "repairs": 10,
+        "found": 8,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      {
+        "threshold": 10.5,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 11.0,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 11.5,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 12.0,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 12.5,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 13.0,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 13.5,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 14.0,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 14.5,
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058
+      },
+      {
+        "threshold": 15.0,
+        "flags": 6,
+        "repairs": 10,
+        "found": 6,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      {
+        "threshold": 15.5,
+        "flags": 6,
+        "repairs": 10,
+        "found": 6,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      {
+        "threshold": 16.0,
+        "flags": 6,
+        "repairs": 10,
+        "found": 6,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      {
+        "threshold": 16.5,
+        "flags": 6,
+        "repairs": 10,
+        "found": 6,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      {
+        "threshold": 17.0,
+        "flags": 6,
+        "repairs": 10,
+        "found": 6,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      {
+        "threshold": 17.5,
+        "flags": 6,
+        "repairs": 10,
+        "found": 6,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      {
+        "threshold": 18.0,
+        "flags": 5,
+        "repairs": 10,
+        "found": 5,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      {
+        "threshold": 18.5,
+        "flags": 5,
+        "repairs": 10,
+        "found": 5,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      {
+        "threshold": 19.0,
+        "flags": 5,
+        "repairs": 10,
+        "found": 5,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      {
+        "threshold": 19.5,
+        "flags": 5,
+        "repairs": 10,
+        "found": 5,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      {
+        "threshold": 20.0,
+        "flags": 5,
+        "repairs": 10,
+        "found": 5,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      {
+        "threshold": 20.5,
+        "flags": 5,
+        "repairs": 10,
+        "found": 5,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      {
+        "threshold": 21.0,
+        "flags": 5,
+        "repairs": 10,
+        "found": 5,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      {
+        "threshold": 21.5,
+        "flags": 5,
+        "repairs": 10,
+        "found": 5,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      {
+        "threshold": 22.0,
+        "flags": 5,
+        "repairs": 10,
+        "found": 5,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      {
+        "threshold": 22.5,
+        "flags": 4,
+        "repairs": 10,
+        "found": 4,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      {
+        "threshold": 23.0,
+        "flags": 4,
+        "repairs": 10,
+        "found": 4,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      {
+        "threshold": 23.5,
+        "flags": 3,
+        "repairs": 10,
+        "found": 3,
+        "precision": 1.0,
+        "recall": 0.3,
+        "f1": 0.46153846153846156
+      },
+      {
+        "threshold": 24.0,
+        "flags": 3,
+        "repairs": 10,
+        "found": 3,
+        "precision": 1.0,
+        "recall": 0.3,
+        "f1": 0.46153846153846156
+      },
+      {
+        "threshold": 24.5,
+        "flags": 2,
+        "repairs": 10,
+        "found": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333333333333333
+      },
+      {
+        "threshold": 25.0,
+        "flags": 2,
+        "repairs": 10,
+        "found": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333333333333333
+      },
+      {
+        "threshold": 25.5,
+        "flags": 2,
+        "repairs": 10,
+        "found": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333333333333333
+      },
+      {
+        "threshold": 26.0,
+        "flags": 2,
+        "repairs": 10,
+        "found": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333333333333333
+      },
+      {
+        "threshold": 26.5,
+        "flags": 2,
+        "repairs": 10,
+        "found": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333333333333333
+      },
+      {
+        "threshold": 27.0,
+        "flags": 2,
+        "repairs": 10,
+        "found": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333333333333333
+      },
+      {
+        "threshold": 27.5,
+        "flags": 2,
+        "repairs": 10,
+        "found": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333333333333333
+      },
+      {
+        "threshold": 28.0,
+        "flags": 2,
+        "repairs": 10,
+        "found": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333333333333333
+      },
+      {
+        "threshold": 28.5,
+        "flags": 2,
+        "repairs": 10,
+        "found": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333333333333333
+      },
+      {
+        "threshold": 29.0,
+        "flags": 2,
+        "repairs": 10,
+        "found": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333333333333333
+      },
+      {
+        "threshold": 29.5,
+        "flags": 2,
+        "repairs": 10,
+        "found": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333333333333333
+      },
+      {
+        "threshold": 30.0,
+        "flags": 2,
+        "repairs": 10,
+        "found": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333333333333333
+      },
+      {
+        "threshold": 30.5,
+        "flags": 2,
+        "repairs": 10,
+        "found": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333333333333333
+      },
+      {
+        "threshold": 31.0,
+        "flags": 1,
+        "repairs": 10,
+        "found": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182
+      },
+      {
+        "threshold": 31.5,
+        "flags": 1,
+        "repairs": 10,
+        "found": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182
+      },
+      {
+        "threshold": 32.0,
+        "flags": 1,
+        "repairs": 10,
+        "found": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182
+      },
+      {
+        "threshold": 32.5,
+        "flags": 1,
+        "repairs": 10,
+        "found": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182
+      },
+      {
+        "threshold": 33.0,
+        "flags": 1,
+        "repairs": 10,
+        "found": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182
+      },
+      {
+        "threshold": 33.5,
+        "flags": 1,
+        "repairs": 10,
+        "found": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182
+      },
+      {
+        "threshold": 34.0,
+        "flags": 1,
+        "repairs": 10,
+        "found": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182
+      },
+      {
+        "threshold": 34.5,
+        "flags": 1,
+        "repairs": 10,
+        "found": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182
+      },
+      {
+        "threshold": 35.0,
+        "flags": 1,
+        "repairs": 10,
+        "found": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182
+      },
+      {
+        "threshold": 35.5,
+        "flags": 1,
+        "repairs": 10,
+        "found": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182
+      },
+      {
+        "threshold": 36.0,
+        "flags": 1,
+        "repairs": 10,
+        "found": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182
+      },
+      {
+        "threshold": 36.5,
+        "flags": 1,
+        "repairs": 10,
+        "found": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182
+      },
+      {
+        "threshold": 37.0,
+        "flags": 1,
+        "repairs": 10,
+        "found": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182
+      },
+      {
+        "threshold": 37.5,
+        "flags": 1,
+        "repairs": 10,
+        "found": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182
+      },
+      {
+        "threshold": 38.0,
+        "flags": 1,
+        "repairs": 10,
+        "found": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182
+      },
+      {
+        "threshold": 38.5,
+        "flags": 1,
+        "repairs": 10,
+        "found": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182
+      },
+      {
+        "threshold": 39.0,
+        "flags": 1,
+        "repairs": 10,
+        "found": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182
+      },
+      {
+        "threshold": 39.5,
+        "flags": 0,
+        "repairs": 10,
+        "found": 0,
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0
+      },
+      {
+        "threshold": 40.0,
+        "flags": 0,
+        "repairs": 10,
+        "found": 0,
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0
+      }
+    ]
+  },
+  "development": {
+    "windows": {
+      "3": {
+        "flags": 7,
+        "repairs": 10,
+        "found": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058,
+        "flags_by_day": {
+          "2018-02-10": 41.45,
+          "2018-03-24": 34.76,
+          "2018-04-01": 43.75,
+          "2018-05-28": 39.72,
+          "2018-06-02": 39.54,
+          "2018-08-12": 43.98,
+          "2018-09-02": 37.68
+        }
+      },
+      "7": {
+        "flags": 8,
+        "repairs": 10,
+        "found": 8,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888,
+        "flags_by_day": {
+          "2018-02-10": 23.25,
+          "2018-03-23": 24.04,
+          "2018-04-02": 31.0,
+          "2018-05-29": 39.06,
+          "2018-08-12": 17.88,
+          "2018-09-02": 14.68,
+          "2018-10-23": 10.1,
+          "2018-11-08": 22.32
+        }
+      }
+    },
+    "repairs": [
+      {
+        "pipe": "p232",
+        "end": "2018-02-10 09:20:00",
+        "size": 25.94,
+        "drop_3": 41.45,
+        "flag_3": "2018-02-10",
+        "drop_7": 23.25,
+        "flag_7": "2018-02-10"
+      },
+      {
+        "pipe": "p673",
+        "end": "2018-03-23 10:25:00",
+        "size": 28.4,
+        "drop_3": 34.76,
+        "flag_3": "2018-03-24",
+        "drop_7": 24.04,
+        "flag_7": "2018-03-23"
+      },
+      {
+        "pipe": "p461",
+        "end": "2018-04-02 11:40:00",
+        "size": 30.2,
+        "drop_3": 43.75,
+        "flag_3": "2018-04-01",
+        "drop_7": 31.0,
+        "flag_7": "2018-04-02"
+      },
+      {
+        "pipe": "p628",
+        "end": "2018-05-29 21:20:00",
+        "size": 34.56,
+        "drop_3": 39.72,
+        "flag_3": "2018-05-28",
+        "drop_7": 39.06,
+        "flag_7": "2018-05-29"
+      },
+      {
+        "pipe": "p538",
+        "end": "2018-06-02 06:05:00",
+        "size": 32.79,
+        "drop_3": 39.54,
+        "flag_3": "2018-06-02",
+        "drop_7": 28.64,
+        "flag_7": null
+      },
+      {
+        "pipe": "p866",
+        "end": "2018-06-12 03:00:00",
+        "size": 20.52,
+        "drop_3": 20.98,
+        "flag_3": null,
+        "drop_7": 16.01,
+        "flag_7": null
+      },
+      {
+        "pipe": "p31",
+        "end": "2018-08-12 17:30:00",
+        "size": 15.99,
+        "drop_3": 43.98,
+        "flag_3": "2018-08-12",
+        "drop_7": 17.88,
+        "flag_7": "2018-08-12"
+      },
+      {
+        "pipe": "p183",
+        "end": "2018-09-01 17:10:00",
+        "size": 16.24,
+        "drop_3": 37.68,
+        "flag_3": "2018-09-02",
+        "drop_7": 14.68,
+        "flag_7": "2018-09-02"
+      },
+      {
+        "pipe": "p158",
+        "end": "2018-10-23 13:35:00",
+        "size": 24.35,
+        "drop_3": 24.25,
+        "flag_3": null,
+        "drop_7": 10.1,
+        "flag_7": "2018-10-23"
+      },
+      {
+        "pipe": "p369",
+        "end": "2018-11-08 20:25:00",
+        "size": 20.3,
+        "drop_3": 21.06,
+        "flag_3": null,
+        "drop_7": 22.32,
+        "flag_7": "2018-11-08"
+      }
+    ]
+  },
+  "test": {
+    "windows": {
+      "3": {
+        "flags": 3,
+        "repairs": 7,
+        "found": 3,
+        "precision": 1.0,
+        "recall": 0.42857142857142855,
+        "f1": 0.6,
+        "flags_by_day": {
+          "2019-05-05": 35.77,
+          "2019-09-15": 35.27,
+          "2019-10-01": 38.32
+        }
+      },
+      "7": {
+        "flags": 6,
+        "repairs": 7,
+        "found": 6,
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "f1": 0.9230769230769231,
+        "flags_by_day": {
+          "2019-02-03": 31.73,
+          "2019-05-05": 18.51,
+          "2019-05-23": 14.29,
+          "2019-07-17": 24.68,
+          "2019-09-15": 16.68,
+          "2019-10-01": 21.44
+        }
+      }
+    },
+    "repairs": [
+      {
+        "pipe": "p523",
+        "end": "2019-02-01 09:50:00",
+        "size": 28.16,
+        "drop_3": 25.24,
+        "flag_3": null,
+        "drop_7": 31.73,
+        "flag_7": "2019-02-03"
+      },
+      {
+        "pipe": "p827",
+        "end": "2019-02-07 09:05:00",
+        "size": 26.24,
+        "drop_3": 20.84,
+        "flag_3": null,
+        "drop_7": 30.22,
+        "flag_7": null
+      },
+      {
+        "pipe": "p653",
+        "end": "2019-05-05 12:10:00",
+        "size": 17.9,
+        "drop_3": 35.77,
+        "flag_3": "2019-05-05",
+        "drop_7": 18.51,
+        "flag_7": "2019-05-05"
+      },
+      {
+        "pipe": "p514",
+        "end": "2019-05-23 14:55:00",
+        "size": 15.38,
+        "drop_3": 11.66,
+        "flag_3": null,
+        "drop_7": 14.29,
+        "flag_7": "2019-05-23"
+      },
+      {
+        "pipe": "p142",
+        "end": "2019-07-17 09:25:00",
+        "size": 26.45,
+        "drop_3": 33.41,
+        "flag_3": null,
+        "drop_7": 24.68,
+        "flag_7": "2019-07-17"
+      },
+      {
+        "pipe": "p586",
+        "end": "2019-09-16 03:20:00",
+        "size": 20.41,
+        "drop_3": 35.27,
+        "flag_3": "2019-09-15",
+        "drop_7": 16.68,
+        "flag_7": "2019-09-15"
+      },
+      {
+        "pipe": "p800",
+        "end": "2019-10-01 16:35:00",
+        "size": 21.59,
+        "drop_3": 38.32,
+        "flag_3": "2019-10-01",
+        "drop_7": 21.44,
+        "flag_7": "2019-10-01"
+      }
+    ]
+  }
+}
