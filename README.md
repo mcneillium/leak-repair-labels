@@ -25,7 +25,7 @@ L-Town, the benchmark of the Battle of the Leakage Detection and Isolation Metho
 
 Every flag in both years matched a recorded repair, so the rules' errors here are all misses. `results/study.json` holds every threshold score, both repair tables and the flag paired with each repair; `results/stages.txt` is the printed output of the run.
 
-<!-- TODO (Paul): put the findings in your own words. -->
+I wanted to know whether a drop in night flow was enough to pick out a repair. I set the thresholds using 2018, then checked them against the seven recorded repairs in 2019. The three-night rule found three and the seven-night rule found six. Every flag matched a recorded repair within two days. What stood out to me was that the three-night rule could raise a genuine flag every time and still miss more than half the repairs.
 
 ## How to run
 
