@@ -1,6 +1,6 @@
 # Protocol 2 (draft): does a model trained on the rule's labels repeat the rule's misses?
 
-Status: draft, second version, 24 November 2026. The first version was written by the assistant. This version records the choices Paul proposed on 24 November (sent at 02:49) and the details the assistant added to make them runnable, which are marked "to confirm". Nothing here is in force until Paul dates and commits the final version. No experiment has been run. The only code run so far is the feasibility check in `sim/`, which times the simulator and computes no result.
+Status: draft, third version, 24 November 2026. The first version was written by the assistant. This version records the choices Paul proposed on 24 November (sent at 02:49) and the details the assistant added to make them runnable, which are marked "to confirm". B9 was decided by Paul at 03:33. Nothing here is in force until Paul dates and commits the final version; his predictions and the remaining choices are still open for his review. No experiment has been run. The only code run so far is the feasibility check in `sim/`, which times the simulator and computes no result.
 
 ## Why a second stage
 
@@ -16,11 +16,11 @@ The three-night rule is primary. It missed four of seven repairs in the original
 
 ## Data
 
-Simulated years of L-Town, made from `L-TOWN.inp` (Zenodo record 4017659, CC BY 4.0) with leaks added at known times. Each simulated year gives 5-minute flows for `p227` and `p235` and the level of `T1`, so the night flow and both rules from protocol 1 run on it unchanged.
+Simulated years of L-Town, made from `L-TOWN_Real.inp` (Zenodo record 4017659, CC BY 4.0; B9) with leaks added at known times. Each simulated year gives 5-minute flows for `p227` and `p235` and the level of `T1`, so the night flow and both rules from protocol 1 run on it unchanged.
 
 The real 2018 and 2019 data are not training or test data here. 2018 sets the leak ranges (B2) and is used in the first check. 2019 has already been scored, so it can only be shown beside the simulated results as already seen.
 
-## Choices (Paul's proposals, 24 November)
+## Choices (Paul's proposals, 24 November; B9 decided at 03:33)
 
 | Choice | Proposed decision |
 | --- | --- |
@@ -32,6 +32,7 @@ The real 2018 and 2019 data are not training or test data here. 2018 sets the le
 | B6 Years | 10 training, 4 development and 6 final test years, whole years assigned to each split in advance. The development years fix the model's decision threshold and how consecutive positive days become one flag. The simulated repair truth is kept out of model fitting and threshold selection. |
 | B7 Primary measure | Of all true repairs the three-night rule missed in the six test years, the fraction its model also missed. Counts pooled over the six years, shown as numerator and denominator. Each detector's flags are matched to the full repair list independently with protocol 1's rule (one to one, closest first, within 2 days), then compared by repair ID. If the rule misses none, the measure is reported as undefined. |
 | B8 Seeds | Simulation seeds 1001 to 1010 for training, 1011 to 1014 for development, 1015 to 1020 for test. Model seed 42 wherever the fitting uses randomness. Recorded in `RUN.md`. |
+| B9 Demand (Paul, 03:33) | Use `L-TOWN_Real.inp`. Give each simulated year a distinct, seed-selected whole-week offset into its year of demand. Before running any study year, measure the absolute change in leak-free night flow across the join; if it exceeds 5 m3/h, smooth the join and recheck it. |
 
 Secondary measure: the number of unmatched model flags per test year, averaged over the six years. This is the cost of recovering a repair the rule missed. Shown alongside it: how many of the rule's missed repairs the model recovered, and how many repairs the rule found that the model then lost.
 
@@ -39,12 +40,7 @@ Secondary measure: the number of unmatched model flags per test year, averaged o
 
 These fill gaps the choices above leave open. Each is a suggestion for Paul to accept, change or drop before the final version.
 
-1. **Demand that varies through the year (new choice B9).** The public `L-TOWN.inp` has one-week demand patterns (2,016 five-minute steps for the residential and commercial patterns), so every simulated week would have the same demand. The published 2018 and 2019 data were made from a different network file (`L-TOWN_Real.inp` in `dataset_configuration.yaml`) with yearly demand. Without some variation the rule may miss almost nothing, and the primary measure could come out undefined. Options: (a) scale each day's demand by a factor drawn from the spread of 2018 night flows with the leaks removed; (b) add random noise to each node's demand; (c) check whether the BattLeDIM loaders in `epyt-flow` or `water-benchmark-hub` provide the yearly demand used for the benchmark, and use it. (d) Use `L-TOWN_Real.inp` from the same Zenodo record (checked on 24 November, see below).
-
-   What `L-TOWN_Real.inp` holds (assistant's check, 24 November; file read, nothing simulated): MD5 equal to the one published on the record. The same layout as `L-TOWN.inp` (782 junctions, 905 pipes, 1 tank, 2 reservoirs, 1 pump, 3 valves, 2,346 demand entries), but every pipe's length, diameter and roughness differ slightly, and it has 104 demand patterns of 105,120 five-minute steps (365 days), against the public file's one-week patterns. Points for the choice:
-   - It is the network that, by `dataset_configuration.yaml`, made the published data, so check 1 below would be a like-for-like comparison.
-   - It holds one year of demand, so every simulated year would have the same background unless each year starts the demand at a different whole week, or (b) is added on top. A model could otherwise learn the calendar rather than the repairs.
-   - Simulation time with these patterns has not been measured.
+1. **Demand (B9), decided by Paul at 03:33; see the table.** Background recorded on 24 November: the public `L-TOWN.inp` has one-week demand patterns, so every simulated week would have had the same demand. `L-TOWN_Real.inp` (same Zenodo record, MD5 equal to the record's) has the same layout but slightly different length, diameter and roughness for every pipe, and 104 demand patterns of 105,120 five-minute steps (365 days). By `dataset_configuration.yaml` it is the network that made the published data. The options not taken were daily scaling from 2018, random noise on each node's demand, and epyt-flow's realistic-demand loader. Details still to confirm: how the offset is drawn from the seed so that no two years share one, and how a join above 5 m3/h is smoothed.
 2. **Draft B2 ranges, from the 2018 leaks only.** Counted from the 14 leaks in `dataset_configuration.yaml` that start in 2018. That file also lists the 2019 leaks; they were read for protocol 1 and are not used here.
    - 14 leaks a year, at different pipes drawn at random, excluding the reservoir feeds `p227` and `p235`.
    - Type: 6 of 14 abrupt (full size at once), 8 incipient (growing to full size).
@@ -62,7 +58,8 @@ These fill gaps the choices above leave open. Each is a suggestion for Paul to a
 
 ## Checks before any study run
 
-1. Reproduce one 2018 leak from `dataset_configuration.yaml` in the simulator and compare the simulated night flow with the published 2018 night flow for the same weeks. This uses 2018 only, and it will also show how far `L-TOWN.inp` is from the network that made the published data.
+0. The join (Paul, B9). On a leak-free simulation of `L-TOWN_Real.inp`, measure the absolute change in night flow across the point where a shifted year wraps to the start of the demand year. If it exceeds 5 m3/h, smooth the join and measure it again.
+1. Reproduce one 2018 leak from `dataset_configuration.yaml` in the simulator with `L-TOWN_Real.inp` and compare the simulated night flow with the published 2018 night flow for the same weeks. This uses 2018 only. The difference is reported without a pass or fail cutoff (Paul, 03:33).
 2. Run both protocol 1 rules on one simulated year and confirm the code path is the one in `leak_rule.py`.
 3. Fix the generator and check that the same seed gives byte-identical files.
 
@@ -77,7 +74,7 @@ These are Paul's draft ranges of 24 November. They stay drafts until he confirms
 
 - The simulated years come from the same model as the benchmark, so the rule may do better or worse on them than on a real network.
 - The leaks are drawn from ranges set from one year. The rule's miss rate depends on those ranges.
-- The public network file differs from the one that made the published data, and its demand repeats weekly unless B9 changes that.
+- The demand comes from one year of the benchmark, shifted by whole weeks, so the simulated years share the same seasons and differ mainly in their leaks and in where the year starts.
 - A model trained on simulated night flow has not been shown to work on real data.
 
 ## Feasibility (assistant work, 24 November 2026)
@@ -91,3 +88,11 @@ Run in a Python 3 environment with `wntr` 1.5.0 on the assistant's machine. The 
 - EPANET with one fixed emitter: 1.0 s for 7 days.
 
 At 31 s a week, one simulated year would take about 27 minutes on that machine. This is arithmetic from one run, not a measurement. Twenty years in four parallel processes would be roughly 2 to 3 hours.
+
+With `L-TOWN_Real.inp` (B9), timed at Paul's request on 24 November with `sim/timing_real.py`; the same machine, one week each, demand starting at the first week, nothing scored and no night flow computed:
+
+- Loading the 177 MB file: 5.5 s.
+- WNTR's pressure-driven simulator, 7 days, no leak: 41.6 s (2,017 time steps).
+- The same with one test leak (orifice area 0.0005 m2 at one junction from day 3, chosen only to test the code): 42.1 s.
+
+At about 42 s a week, one simulated year would take about 37 minutes on that machine, and the 20 study years about 12 hours in one process or about 3 hours in four. This is arithmetic from one run of each, not a measurement of a full year.

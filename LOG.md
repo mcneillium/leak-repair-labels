@@ -118,3 +118,8 @@ How 2019 comes out elsewhere in those ranges has not been run.
 
 - Downloaded from Zenodo record 4017659 (177 MB, MD5 `40fb38de25ed692a5ddd30e0f5fae332`, equal to the record's). Not added to the repository.
 - Read only, nothing simulated: same layout as `L-TOWN.inp`, all 905 pipes with different length, diameter and roughness, and 104 demand patterns covering 365 days at 5-minute steps. Added as option (d) under B9 in `docs/protocol_02_draft.md`, for Paul to decide.
+
+## 24 November 2026, 03:33 to 03:45: B9 decided, and the real network timed
+
+- Paul decided B9 at 03:33: use `L-TOWN_Real.inp`; give each simulated year a distinct, seed-selected whole-week offset; before any study year, measure the absolute change in leak-free night flow across the join, smooth it if it exceeds 5 m3/h and recheck; report the simulated-against-published 2018 night-flow difference with no pass or fail cutoff. The assistant recorded these in `docs/protocol_02_draft.md` (third version). His predictions and the remaining choices are still open for his review.
+- At his request the assistant ran `sim/timing_real.py`: one week of `L-TOWN_Real.inp` in WNTR's pressure-driven simulator with no leak (41.6 s) and with one test leak (42.1 s); loading took 5.5 s. Neither run was scored and no night flow was computed.
