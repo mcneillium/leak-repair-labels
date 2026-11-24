@@ -113,3 +113,8 @@ How 2019 comes out elsewhere in those ranges has not been run.
 - Paul made a new conda environment (`leak`, Python 3.12), installed pandas 2.2.3, PyYAML 6.0.3 and pytest 9.2.0 as in `RUN.md`, and ran the tests and the study. pip chose NumPy 2.5.5.
 - Result, checked by the assistant from the files Paul's run wrote: 6 passed, 4 warnings; `stages.txt` and `study.json` identical to `results/` byte for byte once Windows line endings are removed.
 - `RUN.md` now pins NumPy 2.5.5 and says it is the rerun's version, not the original's.
+
+## 24 November 2026, 03:25: `L-TOWN_Real.inp` checked for protocol 2 (assistant work)
+
+- Downloaded from Zenodo record 4017659 (177 MB, MD5 `40fb38de25ed692a5ddd30e0f5fae332`, equal to the record's). Not added to the repository.
+- Read only, nothing simulated: same layout as `L-TOWN.inp`, all 905 pipes with different length, diameter and roughness, and 104 demand patterns covering 365 days at 5-minute steps. Added as option (d) under B9 in `docs/protocol_02_draft.md`, for Paul to decide.
